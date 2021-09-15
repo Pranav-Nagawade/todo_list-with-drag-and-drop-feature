@@ -5,12 +5,21 @@
 }
 
 .App {
-    display: flex;
     width: 100%;
-    justify-content: space-between;
+}
+.text_box {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
+input {
+    min-width: 400px;
+}
 
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
 .App .column {
     width: 30%;
     /* position: absolute; */
