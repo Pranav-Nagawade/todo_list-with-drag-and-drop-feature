@@ -63,7 +63,7 @@ function App() {
     };
 
     const addItem = () => {
-        if (text.trim.length === 0) return;
+        if (text.trim().length === 0) return;
         setState((prev) => {
             return {
                 ...prev,
