@@ -63,6 +63,7 @@ function App() {
     };
 
     const addItem = () => {
+        if (text.trim.length === 0) return;
         setState((prev) => {
             return {
                 ...prev,
@@ -89,7 +90,9 @@ function App() {
                 <input
                     type="text"
                     value={text}
-                    onChange={(e) => setText(e.target.value)}
+                    onChange={(e) => {
+                        setText(e.target.value);
+                    }}
                 />
                 <button onClick={addItem}>Add</button>
             </div>
